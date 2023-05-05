@@ -1,6 +1,4 @@
 import streamlit 
-
-streamlit.title("Hello World ofcours!🥣")
-streamlit.header("I hope to write better codes🍌")
-streamlit.text('When I will get the badge')
-streamlit.title("Shoudl I follow the same instructions!🥣")
+import pandas
+my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)
